@@ -1,3 +1,5 @@
+properties([parameters([string(defaultValue: 'james', description: '', name: 'YourName', trim: true)])])
+
 stage 'Compile'
 node() {
     checkout scm
